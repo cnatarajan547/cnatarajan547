@@ -4,7 +4,7 @@ router = express.Router();
 
 const userRegisterService = require('../services/userRegister.service');
 
-router.post('/user/register', async (req, res)=>{
+router.post('/user/registe', async (req, res)=>{
 userRegisterService.addRegister (req, res)
 });
 
