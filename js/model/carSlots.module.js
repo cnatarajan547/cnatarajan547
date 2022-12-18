@@ -27,8 +27,8 @@ async function getcarSlots() {
 
 async function getEmptySlots() {
                                       // createdAt: {$eq:}
-    const result = await carSlots.find({"isFree": false});
-    // const result = await carSlots.count({"isFree": false});
+    // const result = await carSlots.find({"isFree": false});
+    const result = await carSlots.count({"isFree": false});
     return result; 
 }
 
